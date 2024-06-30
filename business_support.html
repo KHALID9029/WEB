@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business_Support-Bcause</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        
+        <div id="logo"><img src="images/logo.png" alt=""></div>
+        <div id="menu"> 
+            <a href="">About Us</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Services</button>
+                        <div class="dropdown-content">
+                            <a href="#">Translation</a>
+                            <a href="#">Business Support</a>
+                        </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Language</button>
+                        <div class="dropdown-content">
+                            <a href="#">English</a>
+                            <!-- <a href="#">Bangla</a> -->
+                            <a href="#">Japanese</a>
+                        </div>
+                </div>
+        
+                <button class="button-style primary-btn" id="change-lang">Contact Us</button>
+                <button class="button-style secondary-btn" id="inquires">Book a chat</button>
+
+        </div>
+          
+    </header>
+
+    <div id="line-icon">
+        <img src="images/line-icon.png" alt="">  <!--Change with correct line logo-->
+    </div>
+
+    <main>
+    <section class="form-section">
+        <form>
+            <div>
+                <input type="radio" style="height:15px;">Personal
+                <input type="radio" style="height:15px">Professional
+                <input type="radio" style="height:15px">Business Purpose
+            </div>
+
+            <!--Just a second way. See which one is better-->
+            <!-- <h3>Personal</h3>
+            <h3>Professional</h3>
+            <h3>Business Purpose</h3> -->
+
+            <div class="input-group">
+                    <label for="first-name">First Name *</label>
+                    <input type="text" id="first-name" placeholder="First Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="last-name">Last Name *</label>
+                    <input type="text" id="last-name" placeholder="Last Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone-number">Phone Number *</label>
+                    <input type="tel" id="phone-number" placeholder="Phone Number" required>
+                </div>
+                
+            <textarea placeholder="Please provide additional details about your translation here..." required></textarea>
+            <button type="submit">Submit Form</button>
+        </form>
+    </section>
+
+    <section class="upload-section">
+        
+        <h3>Receive a response in an hour or less</h3>
+        <div class="upload-box">
+            <textarea placeholder="Type or Paste your text here..."></textarea>
+            <button>Drag & Upload Files</button>
+        </div>
+        
+        <div class="languages">
+            <input type="text" placeholder="FROM">
+            <input type="text" placeholder="TO">
+        </div>
+
+        <div class="document-type">
+            <button>Type of document</button>
+        </div>
+    </section>
+    </main>
+    
+</body>
